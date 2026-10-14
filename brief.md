@@ -32,5 +32,8 @@ A star schema has a main fact table linked directly to dimension tables. A snowf
 Resource: Performance of NoSQL Graph Implementations of Star vs. Snowflake Schemas - https://doi.org/10.1109/ACCESS.2022.3171256
 
 ## Misconception in My Track
+A star schema has a main fact table linked directly to dimension tables. A snowflake schema breaks some dimensions into smaller related tables, which can lower repeated data but might need more joins. For daily 5G service usage reports by area, I would pick a star schema since it is easier for reporting. A usage fact table connected to date and area dimensions would assist the operator in calculating daily traffic, comparing areas, and understanding service demand.
 
 ## Open Question
+How can emergency mobile applications safely retry HTTP POST requests when a network connection fails? I would investigate whether idempotency keys and server-side duplicate detection can prevent repeated actions while ensuring that important emergency reports are not lost.
+
