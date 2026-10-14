@@ -17,10 +17,19 @@ The emergency responder's mobile app should continue working when the internet c
 Resource: Synchronization Between Local and Remote Database on The Example of The Mobile Application of The Idvictim System - https://ibimapublishing.com/p-articles/40ICT/2022/4042522/
 
 ## Networking
+With 5G network slicing, telecom operators can create logical networks using shared infrastructure. Each slice can support different service requirements, such as low latency, reliability, or high data capacity. For emergency responders, the operator can assign suitable network resources to support critical communication during congestion. This helps emergency teams communicate more effectively. It is important to have backup communication options in case of a network outage, yet network slicing cannot prevent every outage.
+
+Resource: Conceptual Evaluation of a 5G Network Slicing Technique for Emergency Communications and Preliminary Estimate of Energy Trade-Off - https://www.mdpi.com/1996-1073/14/21/6876
 
 ## Cybersecurity
+Cybersecurity incident response helps the operator manage attacks that threaten the emergency 5G service. According to NIST guidelines, preparation supports effective detection, response, and recovery. A first step in investigating an incident is identifying suspicious activity. Once the threat has been contained, the security team takes action to reduce its impact. Then, affected services are safely restored. Afterward, the team reviews lessons learned and improves security practices. These activities help reduce disruption and protect critical communication services.
+
+Resource: NIST SP 800-61 Rev. 3 - Incident Response Recommendations and Considerations for Cybersecurity Risk Management - https://csrc.nist.gov/pubs/sp/800/61/r3/final
 
 ## Data
+A star schema has a main fact table linked directly to dimension tables. A snowflake schema breaks some dimensions into smaller related tables, which can lower repeated data but might need more joins. For daily 5G service usage reports by area, I would pick a star schema since it is easier for reporting. A usage fact table connected to date and area dimensions would assist the operator in calculating daily traffic, comparing areas, and understanding service demand.
+
+Resource: Performance of NoSQL Graph Implementations of Star vs. Snowflake Schemas - https://doi.org/10.1109/ACCESS.2022.3171256
 
 ## Misconception in My Track
 
